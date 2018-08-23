@@ -1,0 +1,99 @@
+.gameRoot {
+  background-color: #F57921;
+  /*height: 900px;*/
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+}
+
+.logo {
+  background: url('../assets/boggle_logo.png');
+  height: 100px;
+  width: 240px;
+  margin: 0 auto;
+
+}
+
+.board {
+  height: 330px;
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 4px solid #FFCA08;
+}
+
+.innerBoard {
+  background-color: #398BD4;
+  height: 320px;
+  width: 320px;
+  padding: 5px;
+}
+
+.letters {
+  margin: 5px;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: -2px 2px 2px #343738;
+}
+.text {
+  margin: 18px;
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+}
+.activeLetter {
+  background-color: #ACCEEC;
+  margin: 5px;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: -2px 2px 2px #343738;
+}
+
+.currentWord {
+  font-family: arial;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.submit {
+  float: right;
+  margin-right: 30px;
+}
+
+.scoreBoard {
+  margin: 20px 0 0 30px;
+  background-color: white;
+  width: 212px;
+  font-family: arial;
+  border: 4px solid #FFCA08;
+}
+
+.leftScore {
+  border-right: 4px solid #FFCA08;
+  display: inline-block;
+  width: 130px;
+  height: 23px;
+  padding: 5px 0 0 10px;
+}
+
+.rightScore {
+  display: inline-block;
+  width: 58px;
+  height: 23px;
+  padding: 5px 0 0 10px;
+}
+
+.newRow {
+  border-top: 4px solid #FFCA08;
+}
+
+.totalScore {
+  border-top: 4px solid #FFCA08;
+  font-weight: bold;
+  background-color: #ACCEEC;
+}
