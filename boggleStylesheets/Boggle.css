@@ -35,9 +35,9 @@ h1.gamename{
 }
 
 span.letters{
-	width: 8px;
+	width: 5px;
 	color: #1d00ff;
-	font-size: 40px;
+	font-size: 36px;
 	background-color: transparent;
 	margin: auto auto;
 	height: 90%;
@@ -91,7 +91,7 @@ table{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 30px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 90px;

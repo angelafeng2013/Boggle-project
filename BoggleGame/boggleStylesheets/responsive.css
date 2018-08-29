@@ -1,0 +1,142 @@
+/* code based on responsive grid system at responsivegridsystem.com */
+
+/* BASIC PAGE SETUP ============================================================================= */
+@font-face {
+	font-family: 'Fredoka One', cursive;
+}
+
+body {
+margin : 0 auto;
+padding : 0;
+font : 100%/1.4 'Fredoka One','lucida sans unicode', 'lucida grande', 'Trebuchet MS', verdana, arial, helvetica, sans-serif;
+color : ##1d00ff;
+text-align: center;
+background: rgb(255, 129, 0);
+ -webkit-user-select: none;  /*so that the screen cannot be highlighted --> makes the click and drag work!*/
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+/*.col:first-child { margin-left: 0;/}  all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+/*  GRID OF FOUR   ============================================================================= */
+
+.span_4_of_4 {
+	width: 100%;
+}
+
+.span_3_of_4 {
+	width: 74.6%;
+}
+
+.span_2_of_4 {
+	width: 55%;
+}
+
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%;
+	}
+	.span_3_of_4 {
+		width: 100%;
+	}
+	.span_2_of_4 {
+		width: 100%;
+	}
+	.span_1_of_4 {
+		width: 100%;
+	}*/
+/*}*/
+
+/*  MAIN LAYOUT	============================================================================= */
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+	#headcontainer {
+		width: 100%;
+		background:#1d00ff;
+	}
+
+		header {
+			clear: both;
+			width: 80%; /* 1000px / 1250px */
+			font-size: 0.8125em; /* 13 / 16 */
+			max-width: 62.3em; /* 1200px / 13 */
+			margin: 0 auto;
+			padding: 10px 0px 10px 0px;
+			position: relative;
+			color: #fff;
+			text-align: center;
+
+
+		}
+
+	#maincontentcontainer {
+		width: 100%;
+		background: rgb(255, 129, 0);
+		text-align: center;
+		vertical-align: middle;
+	}
+
+			#maincontent{
+				clear: both;
+				width: 90%; /* 1000px / 1250px */
+				font-size: 0.8125em; /* 13 / 16 */
+				max-width: 92.3em; /* 1200px / 13 */
+				margin: 0 auto;
+				padding: 1em 0px;
+				color: #333;
+				line-height: 1.5em;
+				position: relative;
+			}
